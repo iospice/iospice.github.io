@@ -118,9 +118,14 @@
 	jQuery(document).ready(function () {
 		if($('.slider-background').length > 0){
 			 $.backstretch([
-				  "img/bg4.jpg"
-				, "img/bg5.jpg"
+				  "img/bg7.jpg"
+				, "img/bg9.jpg"
+				, "img/bg11.jpg"
+				, "img/bg6.jpg"
+				, "img/bg10.jpg"
+				, "img/bg8.jpg"
 				, "img/bg2.jpg"
+
 			  ], {duration: 4000, fade: 1000});
 		}		
 	});
