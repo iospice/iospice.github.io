@@ -290,7 +290,7 @@
 	 //	COUNTDOWN	
 		
 	if($('#countdown').length > 0){		
-		 $('#countdown').countdown('2018/4/1', function(event) {
+		 $('#countdown').countdown('2018/4/5', function(event) {
 		   var $this = $(this).html(event.strftime(''
 			 + '<div class="box"><span>%w</span><br> Weeks </div> '
 			 + '<div class="box"><span>%d</span><br> days </div>  '
