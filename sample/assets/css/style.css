@@ -633,6 +633,8 @@ Buttons
     color: #4aa3df; }
   .navbar-light.navbar-transparent .navbar-nav .nav-link, .navbar-light.navbar-transparent .search-nav a {
     color: rgba(255, 255, 255, 0.8); }
+ .navbar-light.navbar-transparent .navbar-nav .nav-link, .navbar-light.navbar-transparent .search-nav a:hover {
+    color: #000000;}
   .navbar.navbar-default.navbar-transparent.shrink {
     background-color: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
