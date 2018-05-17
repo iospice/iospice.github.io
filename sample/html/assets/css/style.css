@@ -1162,7 +1162,7 @@ h3.display-4 {
     margin-bottom: 50px; }
 
 .hero-gradient {
-  background-image: linear-gradient(to top, #9455a6 40%, #5682be 100%); }
+  background-image: linear-gradient(to left, #91268F 5%, #652c90 50%, #2f308c 100%) }
 
 .mb_YTPBar .buttonBar {
   display: none; }
@@ -1176,12 +1176,12 @@ h3.display-4 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%); }
+    background-image: linear-gradient(to left, #91268F 5%, #652c90 50%, #2f308c 100%) }
 
 .hero-particle-bg {
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%); }
+  background-image: linear-gradient(to left, #91268F 5%, #652c90 50%, #2f308c 100%) }
   .hero-particle-bg .pg-canvas {
     position: absolute;
     left: 0;
