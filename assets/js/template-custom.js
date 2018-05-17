@@ -104,8 +104,8 @@ $(function () {
 jQuery("#bgndVideo").YTPlayer();
       //particle
     $('#bg-particle').particleground({
-        dotColor: '#9A9B9B',
-        lineColor: '#9A9B9B'
+        dotColor: 'rgba(255,255,255,.50)',
+        lineColor: 'rgba(255,255,255,.50)'
     });
 });
 
