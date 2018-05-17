@@ -1,0 +1,236 @@
+/*
+
+Project      : SAAS - For Saas Startups
+Version      : v2.3
+Author       : Design_mylife (Rakesh Sharma)
+Support email: mylifedesign143@gmail.com
+*/
+@font-face {
+    font-family: "Ionicons";
+    src: url("../ionicons/fonts/ionicons.eot?v=2.0.0");
+    src: url("../ionicons/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"),url("../ionicons/fonts/ionicons.ttf?v=2.0.0") format("truetype"),url("../ionicons/fonts/ionicons.woff?v=2.0.0") format("woff"),url("../ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,600,700');
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_menu.scss";
+@import "_dropdown.scss";
+@import "_team.scss";
+@import "_blog.scss";
+@import "_sidebar.scss";
+@import "_pagination.scss";
+@import "_cta.scss";
+@import "_pricing.scss";
+@import "_testimonials.scss";
+@import "_steps.scss";
+@import "_hero-templates.scss";
+@import "_features-service-box.scss";
+@import "_accordoins.scss";
+@import "_misc-pages.scss";
+@import "_tabs.scss";
+@import "_footer.scss";
+
+
+
+.partners-list{
+    img{
+        opacity: 0.3;
+        @include transition(all 0.3s);
+        display: block;
+        margin:0 auto;
+    }
+    >li>a{
+        display:block;
+        margin-top:20px;
+        padding:0px 10px;
+        &:hover{
+            img{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+/***responsive style**/
+@media(max-width:991px){
+    .hero-parallax .hero-inner .hero-content h3{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .hero-content .btn-primary,.hero-gradient .btn-primary{
+        display: none;
+    }
+    .hero-gradient{
+        
+    }
+    .dzsparallaxer,.hero-gradient,.hero-particle-bg{
+        margin-top: 50px;
+    }
+    .hero-gradient,.hero-particle-bg{
+        padding-top: 50px;
+    }
+    .hero-video,.hero-particle-bg,.hero-video-bg{
+        .video-image{
+            position: static;
+            margin-top:30px;
+            width:100%;
+            .video-play-btn{
+                display: block;
+                margin:0 auto;
+                max-width:600px;
+            }
+        }
+        .container{
+            padding-bottom: 0px;
+            text-align:center;
+            padding-top:40px;
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+    .hero-video,.hero-static-image{
+        margin-top:50px;
+        text-align: center;
+        padding-bottom:60px;
+        padding-top:60px;
+        h3.display-4{
+            font-size: 35px;
+            line-height: 40px;
+        }
+        .btn-primary{
+            display: none;
+        }
+        .buttons{
+            margin-bottom: 0px;
+        }
+    }
+    .hero-particle-bg {
+      
+    }
+    .navbar-expand-lg>.container{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .search-nav {
+        margin-left: .9rem;
+        margin-top: 2px;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+    .navbar-toggler-icon{
+        margin-right: 15px;
+    }
+    .navbar-light.navbar-transparent .navbar-brand img {
+        top: 3px;
+    }
+    .fixed-top .navbar-collapse{
+        max-height: 320px;
+    }
+    .navbar-collapse.show{
+        overflow-y: auto;
+    }
+    .navbar-toggler{
+        border-radius: 0px;
+        padding: 0;
+        margin-top: -2px;
+        width: 40px;      
+    }
+    .navbar-toggler-icon{
+        margin-right: 0px;
+    }
+    .navbar-toggler-right{
+        right: 2.5em;
+        border:0px;
+        background-color: transparent!important;
+    }
+    .navbar-light .navbar-toggle{
+        border-color: $skin-color;
+        &:focus,&:hover{
+            border-color: $skin-color;   
+        }
+    }
+    .navbar-toggler,.navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover{
+        background:transparent;
+    }
+    .navbar-light .navbar-toggle .icon-bar{
+        background: #fff;
+        &:focus,&:hover{
+            background: #fff;
+        }
+    }
+    .navbar-nav .nav-link {
+        display: block;
+        padding: .5em 1em;
+    }
+    .navbar-light .navbar-nav{
+        margin-top:15px;
+    }
+    .navbar-toggler.navbar-toggler-right{
+        position: absolute;
+        top: 12px;
+        right: 49px;
+        background-color:#f5f5f5;
+        border-radius:3px;
+    }
+    .navbar-light.navbar-transparent .navbar-brand .logo-top{
+        display: none;
+    }
+    .navbar-light.navbar-transparent .navbar-brand .logo-top{
+        opacity:1;
+        visibility: visible;
+    }
+    .navbar .container-fluid{
+        position: static;
+    }
+}
+@media(max-width:767px){
+
+    .footer .navbar-form{
+        padding-left: 15px;
+        padding-right:15px;
+        .form-control{
+            width: 100%;
+        }
+        .btn-primary{
+            display: block;
+            width: 100%;
+        }
+    }
+    .hero-parallax .hero-inner .hero-content p.lead{
+        font-size: 13px;
+    }
+    .btn-xl{
+        padding: 12px 25px;
+    }
+    .btn-lg{
+        padding: 8px 20px;
+    }
+    .page-title h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .hero-video-bg{
+        background: url('../images/video-fallback.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+@media (max-width: 576px){
+    .navbar-expand-lg>.container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }  
+    .navbar-light.navbar-transparent .navbar-brand img{
+        left:15px;
+    }
+}
