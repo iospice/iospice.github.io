@@ -624,7 +624,7 @@ Buttons
     box-shadow: none; }
   .navbar-transparent .navbar-brand img {
     position: absolute;
-    top: 1.5rem;
+    top: 0.8rem;
     margin-top: 0px; }
     .navbar-transparent .navbar-brand img.logo-scroll {
       opacity: 0;
