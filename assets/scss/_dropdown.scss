@@ -1,0 +1,98 @@
+/*
+Dropdown style
+*/
+
+.dropdown-menu{
+    min-width:150px;
+    padding:10px 0;
+    margin-top:0px;
+    >li>a{
+        text-transform: capitalize;
+        position: relative;
+        font-family: $default-font;
+        font-weight: 400;
+        color:#555;
+        padding: 5px 20px;
+            font-size: 13px;
+            &:hover,&:focus{
+                background-color: transparent;
+                color:$skin-color;
+            }
+    }
+    .badge{
+        font-weight: 700;
+        border-radius:1px;
+        padding:2px 4px;
+        position: relative;
+        margin-left:3px;
+    }
+}
+/**mulit level dropdown**/
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  margin-left: -1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #f7f7f7;
+  margin-top: 10px;
+  margin-right: -5px; }
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #ccc; }
+
+.dropdown-submenu.pull-left {
+  float: none; }
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+@media (min-width: 992px) {
+  .dropdown-menu {
+    margin-top:0px; }
+  .dropdown-menu, .dropdown-submenu .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -moz-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .show > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none; } 
+}
